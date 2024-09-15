@@ -1,44 +1,54 @@
-# ilm_books_backend
+This is a [Django](https://www.djangoproject.com/) project. [Django](https://www.djangoproject.com/) is a high-level Python web framework
 
-## 1. Create Virtual Environment
+## Getting Started
 
-Create venv
+### How to install Django
+1. Install Python
+
+   Get the latest version of [Python](https://www.python.org/downloads/).
+3. Install [pip](https://pip.pypa.io/en/stable/).
+
+   The easiest is to use the [standalone pip installer](https://pip.pypa.io/en/latest/installation/).
+
+5. Create Virtual Environment.
+   
+    This tool provides isolated Python environments, which are more practical than installing
+    packages systemwide. It also allows installing packages without administrator privileges.
+
+   Create venv
   
-```python
+    ```python
+    python3 -m venv ilm_books_venv
+    ```
 
-python3 -m venv ilm_books_venv
-
-```
-
-Activate venv
+    Activate venv
   
-```python
-
-source ilm_books_venv/bin/activate
-
-```
-
-## 2. Install Django
+    ```python
+    source ilm_books_venv/bin/activate
+    ```
+6. Install Django
   
-```python
+    ```python
+    pip install django
+    ```
 
-pip install django
+For more details check [Documentation](https://docs.djangoproject.com/en/5.1/topics/install/).
 
-```
-## 1. Create Virtual Environment
+## Creating a project
 
-Create venv
+  From the command line, **cd** into a directory where you’d like to store your code, then run the following command:
+
+  ```python
+  django-admin startproject ilm_books .
+  ```
+
+  Run local development server
   
-```python
+  ```python
+  python3 manage.py runserver
+  ```
+## Create an app
 
-python3 -m venv ilm_books_venv
-
-```
-
-Activate venv
-  
-```python
-
-source ilm_books_venv/bin/activate
-
-```
+  ```python
+  python3 manage.py startapp ilm
+  ```
